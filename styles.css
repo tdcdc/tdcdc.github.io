@@ -1,0 +1,118 @@
+:root {
+    --bg-color: #f2f2f2;
+    --txt-color: #2e2e2e;
+    --footer-color: var(--txt-color);
+    --footer-bg-color: var(--bg-color);
+    --color-link: #47C7FC;
+    --color-top-bar: #FF8000;
+}
+
+body {
+    margin: 0cm;
+    background-color: var(--bg-color);
+}
+
+.page {
+    margin-top: 3em;
+    color: var(--txt-color);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.footer {
+    color: var(--footer-color);
+    background-color: var(--footer-bg-color);
+    font-size: 80%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.top-bar {
+    width: 100%;
+    margin: 0cm;
+    border-top: 5px solid;
+    border-top-color: var(--color-top-bar);
+}
+
+.header-photo img {
+    padding-top: 10px;
+    border-radius: 50%;
+    background: rgb(255,163,70);
+    background: linear-gradient(90deg, rgba(255,163,70,1) 0%, rgba(255,128,0,1) 100%);
+    width: 200px;
+    height: 200px;
+    vertical-align: middle;
+}
+
+.header h1 {
+    font-size: 300%;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+    color: var(--color-1);
+}
+
+.about {
+    font-weight: normal;
+}
+
+.about a {
+    color: var(--color-link);
+    font-weight: bold;
+}
+
+.social-link a {
+    text-align: center;
+    align-items: center;
+}
+
+.social {
+    width: 100%;
+}
+
+.social-link {
+    display: inline-block;
+    width: 25px;
+    margin: 20px;
+}
+
+.social a {
+    color: var(--txt-color);
+    margin-right: 10px;
+}
+
+.social-link {
+  position: relative;
+  display: inline-block;
+}
+
+.social-link .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--txt-color);
+    color: var(--bg-color);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0px;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.social-link .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--txt-color) transparent transparent transparent;
+  }
+
+.social-link:hover .tooltiptext {
+  visibility: visible;
+}
